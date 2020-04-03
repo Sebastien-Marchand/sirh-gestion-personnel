@@ -19,9 +19,9 @@ public class EditerCollaborateurController extends HttpServlet{
 		String titre = req.getParameter("titre");
 		String nom = req.getParameter("nom");
 		String prenom = req.getParameter("prenom");
-		if(matricule == null || titre == null || nom == null || prenom == null)
+		if(matricule == null || titre == null || nom == null || prenom == null)						//si il manque une information
 		{
-			resp.setStatus(400);
+			resp.setStatus(400);																	//renvoie le status 400 et liste les params oublier
 			resp.getWriter().write("<h1>Edition des collaborateurs</h1>");
 			resp.getWriter().write("<ul>" + "<li>Les paramètres suivant sont incorrects :</li>");
 			if(matricule == null)
