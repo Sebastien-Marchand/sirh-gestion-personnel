@@ -32,6 +32,11 @@
 		<version>3.1.0</version>
 		<scope>provided</scope>
 	</dependency>
+    <dependency>
+    	<groupId>org.apache.maven</groupId>
+    	<artifactId>maven-archiver</artifactId>
+    	<version>3.2.0</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -43,10 +48,7 @@
           <version>3.1.0</version>
         </plugin>
         <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
-        <plugin>
-          <artifactId>maven-resources-plugin</artifactId>
-          <version>3.0.2</version>
-        </plugin>
+        
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.0</version>
